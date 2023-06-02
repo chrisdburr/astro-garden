@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+
+const pageTitle = "Blog";
+const allPosts = await getCollection("posts");
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>This is an area for blog posts, such as the following examples:</p>
+  <ul>
+    {allPosts.map((post) => <BlogPost url={"/posts/" + post.slug} title={post.data.title} />)}
+  </ul>
+</BaseLayout>

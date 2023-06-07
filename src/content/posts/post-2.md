@@ -10,3 +10,4 @@ tags: ["example", "blog", "digital garden"]
 ---
 
 This is another demo blog post.
+

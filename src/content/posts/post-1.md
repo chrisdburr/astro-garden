@@ -10,3 +10,7 @@ tags: ["example", "blog", "digital garden"]
 ---
 
 This is a demo blog post.
+
+```shell
+sudo docker ps
+```

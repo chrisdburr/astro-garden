@@ -7,15 +7,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "prebuild": "node src/scripts/wikilinks.cjs"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/preact": "^2.2.0",
     "@astrojs/rss": "^2.4.3",
-    "astro": "^2.4.1",
+    "@astrojs/tailwind": "^3.1.3",
+    "astro": "^2.5.6",
     "preact": "^10.15.0",
     "remark-wiki-link": "^1.0.4",
+    "tailwindcss": "^3.3.2",
     "unist-util-visit": "^4.1.2"
   },
   "devDependencies": {
